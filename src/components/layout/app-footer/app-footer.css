@@ -1,10 +1,10 @@
-.footer {
+.app-footer {
   padding: 4rem 1.5rem 2.5rem;
   background: var(--ui-footer-bg);
   color: var(--ui-ink-muted);
 }
 
-.footer-grid {
+.app-footer__grid {
   max-width: 1100px;
   margin: 0 auto 2rem;
   display: grid;
@@ -12,23 +12,23 @@
   gap: 2rem;
 }
 
-.footer-brand p {
+.app-footer__brand p {
   margin: 0.6rem 0 0;
   color: var(--ui-ink-soft);
 }
 
-.footer-logo {
+.app-footer__logo {
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-.footer-links {
+.app-footer__links {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
 }
 
-.footer-links h4 {
+.app-footer__links h4 {
   margin: 0 0 0.6rem;
   font-size: 0.95rem;
   letter-spacing: 0.08em;
@@ -36,16 +36,16 @@
   color: var(--ui-ink-muted);
 }
 
-.footer-links a {
+.app-footer__links a {
   color: var(--ui-ink-soft);
   transition: color 0.2s ease;
 }
 
-.footer-links a:hover {
+.app-footer__links a:hover {
   color: var(--ui-ink-contrast);
 }
 
-.footer-base {
+.app-footer__base {
   max-width: 1100px;
   margin: 0 auto;
   padding-top: 1.5rem;

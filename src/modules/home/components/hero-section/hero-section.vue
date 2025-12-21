@@ -17,7 +17,7 @@
           <p>New templates weekly</p>
         </div>
         <div>
-          <h3>500+</h3>
+          <h3>Soon</h3>
           <p>Archive for subscribers</p>
         </div>
         <div>

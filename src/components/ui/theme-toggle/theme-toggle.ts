@@ -1,26 +1,23 @@
 import { defineComponent, onBeforeUnmount, onMounted, ref } from 'vue';
+import type { PropType } from 'vue';
 import { moonSvgIcon, sunSvgIcon } from '@/assets/svgs/themes-icons';
 
+type ThemeToggleSize = 'sm' | 'md';
+
 export default defineComponent({
-  name: 'NavBar',
+  name: 'ThemeToggle',
+  props: {
+    size: {
+      type: String as PropType<ThemeToggleSize>,
+      default: 'md',
+    },
+  },
   setup() {
-    const scrolled = ref(false);
-    const scrollPercent = ref(0);
     const isDark = ref(document.documentElement.getAttribute('data-theme') === 'dark');
     const themeKey = 'rollandpage-theme';
     let themeObserver: MutationObserver | null = null;
 
-    const updateScroll = () => {
-      scrolled.value = window.scrollY > 24;
-      const doc = document.documentElement;
-      const height = doc.scrollHeight - doc.clientHeight;
-      scrollPercent.value = height > 0 ? (doc.scrollTop / height) * 100 : 0;
-    };
-
     onMounted(() => {
-      updateScroll();
-      window.addEventListener('scroll', updateScroll, { passive: true });
-
       themeObserver = new MutationObserver(() => {
         isDark.value = document.documentElement.getAttribute('data-theme') === 'dark';
       });
@@ -31,7 +28,6 @@ export default defineComponent({
     });
 
     onBeforeUnmount(() => {
-      window.removeEventListener('scroll', updateScroll);
       themeObserver?.disconnect();
     });
 
@@ -46,6 +42,6 @@ export default defineComponent({
       }
     };
 
-    return { scrolled, scrollPercent, isDark, toggleTheme, sunSvgIcon, moonSvgIcon };
+    return { isDark, toggleTheme, moonSvgIcon, sunSvgIcon };
   },
 });

@@ -1,10 +1,14 @@
 .home-page {
   color: var(--ui-text);
   background: var(--ui-page-bg);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .home-page main {
   display: flex;
   flex-direction: column;
   gap: 0;
+  flex: 1;
 }

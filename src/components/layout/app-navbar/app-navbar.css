@@ -1,0 +1,117 @@
+.app-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--ui-nav-bg);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 40px rgba(var(--shadow-rgb), 0.12);
+}
+
+.app-navbar__inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.app-navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.app-navbar__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  color: var(--ui-ink-contrast);
+  background: var(--gradient-brand-deep);
+  font-size: 1rem;
+}
+
+.app-navbar__text {
+  font-size: 1.05rem;
+}
+
+.app-navbar__links {
+  display: flex;
+  gap: 1.4rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.app-navbar__links :deep(a) {
+  position: relative;
+  padding-bottom: 0.2rem;
+}
+
+.app-navbar__links :deep(a)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gradient-brand-line);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.app-navbar__links :deep(a):hover::after {
+  transform: scaleX(1);
+}
+
+.app-navbar__actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.app-navbar__cta {
+  height: 36px;
+  padding: 0 1.2rem;
+  border-radius: 999px;
+  background: var(--ui-button-primary-bg);
+  color: var(--ui-button-primary-text);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  white-space: nowrap;
+}
+
+.app-navbar__cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(var(--ink-rgb), 0.25);
+}
+
+@media (max-width: 900px) {
+  .app-navbar__links {
+    display: none;
+  }
+
+  .app-navbar__inner {
+    padding: 1rem 1.5rem;
+  }
+
+  .app-navbar__actions {
+    gap: 0.5rem;
+  }
+
+  .app-navbar__cta {
+    display: none;
+  }
+}

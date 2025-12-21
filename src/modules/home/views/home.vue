@@ -1,6 +1,11 @@
 <template>
   <div class="home-page">
-    <nav-bar />
+    <app-navbar>
+      <a href="#features">Features</a>
+      <a href="#templates">Templates</a>
+      <a href="#insights">Insights</a>
+      <a href="#cta">Pricing</a>
+    </app-navbar>
     <main>
       <hero-section />
       <features-section />
@@ -8,7 +13,7 @@
       <stats-strip />
       <cta-section />
     </main>
-    <footer-block />
+    <app-footer />
   </div>
 </template>
 
