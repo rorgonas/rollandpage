@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 
 import './base.css';
-import App from './App.vue';
+import App from './app.vue';
 import router from './router.ts';
 
 const themeKey = 'rollandpage-theme';
