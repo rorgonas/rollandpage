@@ -1,6 +1,7 @@
 import { defineComponent, onBeforeUnmount, onMounted, ref } from 'vue';
 import type { PropType } from 'vue';
-import { moonSvgIcon, sunSvgIcon } from '@/assets/svgs/themes-icons';
+import moonSvgIcon from '@/assets/icons/moon.svg?raw';
+import sunSvgIcon from '@/assets/icons/sun.svg?raw';
 
 type ThemeToggleSize = 'sm' | 'md';
 

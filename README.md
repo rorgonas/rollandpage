@@ -21,7 +21,6 @@
   </a>
 </p>
 
-
 RollandPage is a curated landing page template repository. The goal is to ship a weekly selection of high-quality templates and grow into a premium template builder/customizer for subscribers.
 
 ## Vision
