@@ -1,0 +1,74 @@
+.error-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  background: radial-gradient(circle at top, #f7f3ef 0%, #f0e7df 45%, #e8dacd 100%);
+  color: #1b1b1f;
+}
+
+.error-shell {
+  max-width: 640px;
+  text-align: left;
+  background: #fdfaf6;
+  border-radius: 24px;
+  padding: 3rem;
+  border: 1px solid rgba(60, 48, 38, 0.1);
+  box-shadow: 0 20px 45px rgba(41, 33, 22, 0.15);
+}
+
+.error-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: #1b1b1f;
+  color: #f7f3ef;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.error-shell h1 {
+  margin: 1.2rem 0 0.8rem;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.1;
+}
+
+.error-shell p {
+  margin: 0 0 2rem;
+  color: #4d4238;
+}
+
+.error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.error-primary,
+.error-secondary {
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.error-primary {
+  background: #1b1b1f;
+  color: #f7f3ef;
+}
+
+.error-secondary {
+  border: 1px solid #1b1b1f;
+  color: #1b1b1f;
+}
+
+.error-primary:hover,
+.error-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(27, 27, 31, 0.15);
+}

@@ -1,0 +1,10 @@
+.home-page {
+  color: #1c1a17;
+  background: #f7f3ef;
+}
+
+.home-page main {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
