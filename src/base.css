@@ -47,3 +47,32 @@ a {
   flex-direction: column;
   min-height: 100vh;
 }
+
+.fade {
+  &-enter-active {
+    transition: opacity var(--tux-animation-duration) var(--tux-animation-ease-out);
+    will-change: opacity;
+  }
+
+  &-enter {
+    opacity: 0;
+  }
+
+  &-enter-to {
+    opacity: 1;
+  }
+
+  &-leave-active {
+    transition: opacity var(--tux-animation-duration) var(--tux-animation-ease-out);
+    will-change: opacity;
+    overflow: hidden;
+  }
+
+  &-leave-from {
+    opacity: 1;
+  }
+
+  &-leave-to {
+    opacity: 0;
+  }
+}
