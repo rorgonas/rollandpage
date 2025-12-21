@@ -9,6 +9,19 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://vite.dev/">
+    <img src="https://img.shields.io/badge/Vite-7.0-1e1e1e?logo=vite&logoColor=white" alt="Vite" />
+  </a>
+  <a href="https://vuejs.org/">
+    <img src="https://img.shields.io/badge/Vue-3-1e1e1e?logo=vue.js&logoColor=white" alt="Vue 3" />
+  </a>
+  <a href="https://www.typescriptlang.org/">
+    <img src="https://img.shields.io/badge/TypeScript-5-1e1e1e?logo=typescript&logoColor=white" alt="TypeScript" />
+  </a>
+</p>
+
+
 RollandPage is a curated landing page template repository. The goal is to ship a weekly selection of high-quality templates and grow into a premium template builder/customizer for subscribers.
 
 ## Vision
