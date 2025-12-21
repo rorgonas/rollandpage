@@ -1,6 +1,6 @@
 .home-page {
-  color: #1c1a17;
-  background: #f7f3ef;
+  color: var(--ui-text);
+  background: var(--ui-page-bg);
 }
 
 .home-page main {

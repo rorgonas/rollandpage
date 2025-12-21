@@ -13,11 +13,11 @@
       </div>
       <div class="hero-metrics">
         <div>
-          <h3>10</h3>
+          <h3>3</h3>
           <p>New templates weekly</p>
         </div>
         <div>
-          <h3>500+</h3>
+          <h3>100+</h3>
           <p>Archived concepts</p>
         </div>
         <div>

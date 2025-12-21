@@ -1,7 +1,7 @@
 .stats {
   padding: 4.5rem 1.5rem;
-  background: #1b1b1f;
-  color: #f7f3ef;
+  background: var(--ui-ink);
+  color: var(--ui-ink-contrast);
 }
 
 .stats-grid {
@@ -19,5 +19,5 @@
 
 .stat-card p {
   margin: 0;
-  color: rgba(247, 243, 239, 0.7);
+  color: var(--ui-ink-muted);
 }

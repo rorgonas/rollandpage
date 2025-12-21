@@ -4,18 +4,18 @@
   align-items: center;
   justify-content: center;
   padding: 4rem 1.5rem;
-  background: radial-gradient(circle at top, #f7f3ef 0%, #f0e7df 45%, #e8dacd 100%);
-  color: #1b1b1f;
+  background: var(--gradient-hero);
+  color: var(--ui-ink);
 }
 
 .error-shell {
   max-width: 640px;
   text-align: left;
-  background: #fdfaf6;
+  background: var(--ui-surface);
   border-radius: 24px;
   padding: 3rem;
-  border: 1px solid rgba(60, 48, 38, 0.1);
-  box-shadow: 0 20px 45px rgba(41, 33, 22, 0.15);
+  border: 1px solid var(--ui-card-border);
+  box-shadow: 0 20px 45px rgba(var(--shadow-rgb), 0.15);
 }
 
 .error-badge {
@@ -23,8 +23,8 @@
   align-items: center;
   padding: 0.35rem 0.85rem;
   border-radius: 999px;
-  background: #1b1b1f;
-  color: #f7f3ef;
+  background: var(--ui-ink);
+  color: var(--ui-ink-contrast);
   font-size: 0.75rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -38,7 +38,7 @@
 
 .error-shell p {
   margin: 0 0 2rem;
-  color: #4d4238;
+  color: var(--ui-text-muted);
 }
 
 .error-actions {
@@ -58,17 +58,17 @@
 }
 
 .error-primary {
-  background: #1b1b1f;
-  color: #f7f3ef;
+  background: var(--ui-button-primary-bg);
+  color: var(--ui-button-primary-text);
 }
 
 .error-secondary {
-  border: 1px solid #1b1b1f;
-  color: #1b1b1f;
+  border: 1px solid var(--ui-button-secondary-border);
+  color: var(--ui-button-secondary-text);
 }
 
 .error-primary:hover,
 .error-secondary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 26px rgba(27, 27, 31, 0.15);
+  box-shadow: 0 12px 26px rgba(var(--ink-rgb), 0.15);
 }

@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&display=swap');
+@import './assets/style/tokens.css';
+@import './assets/style/theme.css';
 
 :root {
-  font-family: 'Fraunces', 'Palatino Linotype', 'Book Antiqua', serif;
+  font-family: var(--font-display);
   line-height: 1.5;
   font-weight: 400;
-  color: #1a1a1a;
-  background-color: #f7f3ef;
+  color: var(--ui-text);
+  background-color: var(--ui-page-bg);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

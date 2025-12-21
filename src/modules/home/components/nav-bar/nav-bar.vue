@@ -11,7 +11,23 @@
         <a href="#insights">Insights</a>
         <a href="#cta">Pricing</a>
       </nav>
-      <a class="nav-cta" href="#templates">Browse Templates</a>
+      <div class="nav-actions">
+        <a class="nav-cta" href="#templates">Browse Templates</a>
+        <button
+          class="theme-toggle"
+          type="button"
+          :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
+          @click="toggleTheme"
+        >
+          <span
+            v-if="!isDark"
+            class="theme-toggle__icon"
+            aria-hidden="true"
+            v-html="moonSvgIcon"
+          ></span>
+          <span v-else class="theme-toggle__icon" aria-hidden="true" v-html="sunSvgIcon"></span>
+        </button>
+      </div>
     </div>
     <div class="scroll-progress" :style="{ width: scrollPercent + '%' }"></div>
   </header>

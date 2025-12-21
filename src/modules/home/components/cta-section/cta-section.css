@@ -1,6 +1,6 @@
 .cta {
   padding: 5rem 1.5rem 6rem;
-  background: #f0e7df;
+  background: var(--ui-section-muted);
 }
 
 .cta-card {
@@ -8,8 +8,8 @@
   margin: 0 auto;
   padding: 3rem;
   border-radius: 28px;
-  background: #1b1b1f;
-  color: #f7f3ef;
+  background: var(--ui-ink);
+  color: var(--ui-ink-contrast);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -24,7 +24,7 @@
 
 .cta-card p {
   margin: 0;
-  color: rgba(247, 243, 239, 0.8);
+  color: var(--ui-text-muted);
 }
 
 .cta-actions {
@@ -44,17 +44,17 @@
 }
 
 .cta-primary {
-  background: #f7f3ef;
-  color: #1b1b1f;
+  background: var(--ui-button-primary-text);
+  color: var(--ui-button-primary-bg);
 }
 
 .cta-secondary {
-  border: 1px solid rgba(247, 243, 239, 0.6);
-  color: #f7f3ef;
+  border: 1px solid var(--ui-button-secondary-border);
+  color: var(--ui-ink-contrast);
 }
 
 .cta-primary:hover,
 .cta-secondary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 12px 30px rgba(var(--ink-rgb), 0.25);
 }

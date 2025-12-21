@@ -1,0 +1,71 @@
+/* Theme: semantic tokens and gradients */
+:root {
+  --font-display: 'Fraunces', 'Palatino Linotype', 'Book Antiqua', serif;
+
+  --gradient-hero: radial-gradient(
+    circle at top,
+    var(--color-bg) 0%,
+    var(--color-bg-muted) 45%,
+    var(--color-bg-accent) 100%
+  );
+  --gradient-brand: linear-gradient(135deg, var(--color-ink), var(--color-brand));
+  --gradient-brand-deep: linear-gradient(135deg, var(--color-ink), var(--color-brand-deep));
+  --gradient-brand-line: linear-gradient(90deg, var(--color-ink), var(--color-brand));
+
+  --ui-page-bg: var(--color-bg);
+  --ui-section-bg: var(--color-bg-soft);
+  --ui-section-muted: var(--color-bg-muted);
+  --ui-surface: var(--color-surface);
+  --ui-surface-strong: var(--color-surface-strong);
+  --ui-card-border: var(--color-border);
+  --ui-card-border-soft: var(--color-border-soft);
+  --ui-text: var(--color-text);
+  --ui-text-muted: var(--color-text-muted);
+  --ui-text-soft: var(--color-text-soft);
+  --ui-accent: var(--color-accent);
+  --ui-ink: var(--color-ink);
+  --ui-ink-contrast: var(--color-ink-contrast);
+  --ui-ink-muted: var(--color-ink-muted);
+  --ui-ink-soft: var(--color-ink-soft);
+  --ui-ink-faint: var(--color-ink-faint);
+  --ui-nav-bg: var(--color-overlay);
+  --ui-footer-bg: var(--color-footer);
+  --ui-button-primary-bg: var(--color-ink);
+  --ui-button-primary-text: var(--color-ink-contrast);
+  --ui-button-secondary-bg: transparent;
+  --ui-button-secondary-border: var(--color-ink);
+  --ui-button-secondary-text: var(--color-ink);
+  --ui-shadow-strong: rgba(var(--shadow-rgb), 0.15);
+  --ui-shadow-soft: rgba(var(--ink-rgb), 0.15);
+}
+
+/* Theme: dark mode overrides (manual toggle) */
+[data-theme='dark'] {
+  --color-text: #f3ece5;
+  --color-text-muted: #cbbdaf;
+  --color-text-soft: #d9cfc4;
+  --color-accent: #c79c6a;
+
+  --color-bg: #141312;
+  --color-bg-soft: #1b1816;
+  --color-bg-muted: #211d1a;
+  --color-bg-accent: #2a231d;
+  --color-surface: #1f1b17;
+  --color-surface-strong: #26211d;
+
+  --color-ink: #f7f3ef;
+  --color-ink-contrast: #1b1b1f;
+  --color-brand: #c2965c;
+  --color-brand-deep: #7c5d3e;
+  --color-footer: #0f0f10;
+
+  --color-border: rgba(247, 243, 239, 0.15);
+  --color-border-soft: rgba(247, 243, 239, 0.1);
+  --color-ink-muted: rgba(247, 243, 239, 0.8);
+  --color-ink-soft: rgba(247, 243, 239, 0.65);
+  --color-ink-faint: rgba(247, 243, 239, 0.5);
+  --color-overlay: rgba(20, 19, 18, 0.92);
+
+  --shadow-rgb: 0, 0, 0;
+  --ink-rgb: 20, 19, 18;
+}

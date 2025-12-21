@@ -1,6 +1,6 @@
 .features {
   padding: 5rem 1.5rem;
-  background: #fff8f1;
+  background: var(--ui-section-bg);
 }
 
 .section-header {
@@ -15,7 +15,7 @@
 }
 
 .section-header p {
-  color: #4d4238;
+  color: var(--ui-text-muted);
 }
 
 .feature-grid {
@@ -29,8 +29,8 @@
 .feature-card {
   padding: 2rem;
   border-radius: 18px;
-  background: #fdfaf6;
-  border: 1px solid rgba(60, 48, 38, 0.08);
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-card-border-soft);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -38,15 +38,15 @@
 
 .feature-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(41, 33, 22, 0.12);
+  box-shadow: 0 18px 40px rgba(var(--shadow-rgb), 0.12);
 }
 
 .feature-icon {
   width: 48px;
   height: 48px;
   border-radius: 14px;
-  background: #1b1b1f;
-  color: #f7f3ef;
+  background: var(--ui-ink);
+  color: var(--ui-ink-contrast);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -60,5 +60,5 @@
 
 .feature-card p {
   margin: 0;
-  color: #4d4238;
+  color: var(--ui-text-muted);
 }
