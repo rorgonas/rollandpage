@@ -13,7 +13,7 @@
       </div>
       <div class="app-footer__links">
         <h4>Company</h4>
-        <a href="/about">About</a>
+        <router-link to="/about">About</router-link>
         <a href="#">Careers</a>
         <a href="#">Contact</a>
       </div>
