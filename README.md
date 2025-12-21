@@ -1,5 +1,36 @@
-# Vue 3 + TypeScript + Vite
+# RollandPage
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+RollandPage is a curated landing page template repository. The goal is to ship a weekly selection of high-quality templates and grow into a premium template builder/customizer for subscribers.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Vision
+
+- Publish weekly template drops that anyone can browse.
+- Build a searchable archive with premium access.
+- Launch a template builder/customizer for subscribers.
+
+## Current Scope
+
+- Curated template showcase UI
+- Theming system with light/dark modes
+- Modular Vue components for landing page sections
+
+## Roadmap
+
+1. Curated weekly templates and archive browsing
+2. Premium archive access and collections
+3. Template builder (customize colors, fonts, layout blocks)
+4. Export and sharing workflows for customers
+
+## Tech Stack
+
+- Vue 3 + Vite + TypeScript
+- Vue Router
+- Prettier + ESLint
+
+## Scripts
+
+- `npm run dev` - start local dev server
+- `npm run build` - typecheck and build production assets
+- `npm run preview` - preview production build
+- `npm run lint` - run ESLint
+- `npm run format` - format with Prettier

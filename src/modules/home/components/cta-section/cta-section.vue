@@ -2,12 +2,12 @@
   <section class="cta" id="cta">
     <div class="cta-card">
       <div>
-        <h2>Unlock the full archive.</h2>
-        <p>Get access to every template, weekly drops, and customization support.</p>
+        <h2>Get early access to the builder.</h2>
+        <p>Join the premium waitlist for archive access and the template customizer.</p>
       </div>
       <div class="cta-actions">
-        <a class="cta-primary" href="#">Start free trial</a>
-        <a class="cta-secondary" href="#">View pricing</a>
+        <a class="cta-primary" href="#">Join waitlist</a>
+        <a class="cta-secondary" href="#">View plans</a>
       </div>
     </div>
   </section>

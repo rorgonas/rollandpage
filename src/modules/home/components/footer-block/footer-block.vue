@@ -3,7 +3,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-logo">RollandPage</div>
-        <p>Weekly templates, curated for founders and design teams.</p>
+        <p>Weekly template drops with a premium builder on the roadmap.</p>
       </div>
       <div class="footer-links">
         <h4>Product</h4>

@@ -1,10 +1,10 @@
 import { defineComponent } from 'vue';
 
 const stats = [
-  { label: 'Templates shipped in 2024', value: '520+' },
-  { label: 'Average build time saved', value: '12 hrs' },
-  { label: 'Teams currently building', value: '1.8k' },
-  { label: 'Industries covered', value: '42' },
+  { label: 'Weekly drops', value: '10' },
+  { label: 'Templates in archive', value: '500+' },
+  { label: 'Teams building', value: '1.8k' },
+  { label: 'Builder waitlist', value: 'Open' },
 ];
 
 export default defineComponent({

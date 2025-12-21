@@ -2,8 +2,8 @@
   <section class="templates" id="templates">
     <div class="templates-header">
       <div>
-        <h2>This week's collection</h2>
-        <p>Hand-selected templates ready for product launches, agencies, and startups.</p>
+        <h2>This week's drops</h2>
+        <p>Free weekly picks now, with premium archive access for subscribers.</p>
       </div>
       <a class="templates-link" href="#cta">Unlock the archive</a>
     </div>

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&display=swap');
 @import './assets/style/tokens.css';
 @import './assets/style/theme.css';
+@import './assets/style/breakpoints.css';
 
 :root {
   font-family: var(--font-display);

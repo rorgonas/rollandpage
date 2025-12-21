@@ -12,7 +12,9 @@
         <a href="#cta">Pricing</a>
       </nav>
       <div class="nav-actions">
-        <a class="nav-cta" href="#templates">Browse Templates</a>
+        <a class="nav-cta" href="#templates">
+          <span class="nav-cta__full">Browse This Week</span>
+        </a>
         <button
           class="theme-toggle"
           type="button"

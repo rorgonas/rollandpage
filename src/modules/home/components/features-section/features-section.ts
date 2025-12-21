@@ -7,8 +7,8 @@ const features = [
     icon: '01',
   },
   {
-    title: 'Layouts that convert',
-    description: 'Built-in storytelling blocks and CTA rhythm help you launch faster.',
+    title: 'Premium archive access',
+    description: 'Subscribers unlock the full back catalog with curated collections.',
     icon: '02',
   },
   {
@@ -17,8 +17,8 @@ const features = [
     icon: '03',
   },
   {
-    title: 'Responsive by default',
-    description: 'Each template is tested across devices with accessible typography.',
+    title: 'Builder on the roadmap',
+    description: 'Customize colors, type, and sections with the upcoming template builder.',
     icon: '04',
   },
 ];

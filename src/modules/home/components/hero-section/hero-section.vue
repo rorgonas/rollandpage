@@ -2,27 +2,27 @@
   <section class="hero" id="top">
     <div class="hero-inner">
       <p class="hero-kicker">Curated landing pages for ambitious teams</p>
-      <h1>RollandPage turns weekly inspiration into ready-to-ship launches.</h1>
+      <h1>Weekly landing page drops, plus a premium builder on the way.</h1>
       <p class="hero-lede">
-        Browse a rotating collection of hand-crafted templates, then remix them into your next
-        product release. Everything is polished, responsive, and built for speed.
+        Explore ten fresh templates every week, with a growing archive for subscribers. Soon,
+        customize layouts, colors, and typography with the RollandPage builder.
       </p>
       <div class="hero-actions">
-        <a class="hero-primary" href="#templates">Explore This Week</a>
-        <a class="hero-secondary" href="#features">See What's Inside</a>
+        <a class="hero-primary" href="#templates">Browse This Week</a>
+        <a class="hero-secondary" href="#cta">Join Builder Waitlist</a>
       </div>
       <div class="hero-metrics">
         <div>
-          <h3>3</h3>
+          <h3>10</h3>
           <p>New templates weekly</p>
         </div>
         <div>
-          <h3>100+</h3>
-          <p>Archived concepts</p>
+          <h3>500+</h3>
+          <p>Archive for subscribers</p>
         </div>
         <div>
-          <h3>3x</h3>
-          <p>Faster launch cycles</p>
+          <h3>Soon</h3>
+          <p>Builder customization</p>
         </div>
       </div>
     </div>
