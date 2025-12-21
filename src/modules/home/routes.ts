@@ -1,6 +1,6 @@
-export const enum HomeRoutes {
-  Index = 'home',
-}
+export const HomeRoutes = {
+  Index: 'home',
+} as const;
 
 export default [
   {

@@ -1,6 +1,6 @@
-export const enum ErrorPageRoutes {
-  Index = 'error',
-}
+export const ErrorPageRoutes = {
+  Index: 'error',
+} as const;
 
 export default [
   {
