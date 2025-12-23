@@ -1,7 +1,7 @@
 import { defineComponent } from 'vue';
 
 const stats = [
-  { label: 'Weekly drops', value: '10' },
+  { label: 'Weekly drops', value: '1' },
   { label: 'Templates in archive', value: 'Soon' },
   { label: 'Teams building', value: '0' },
   { label: 'Builder waitlist', value: 'Open' },
