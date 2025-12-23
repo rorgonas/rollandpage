@@ -1,29 +1,40 @@
+/* Theme: semantic tokens and gradients */
 :root {
-  --color-text: #1a1a1a;
-  --color-text-muted: #4d4238;
-  --color-text-soft: #3f372f;
-  --color-accent: #7c5d3e;
+  --font-display: 'Fraunces', 'Palatino Linotype', 'Book Antiqua', serif;
 
-  --color-bg: #f7f3ef;
-  --color-bg-soft: #fff8f1;
-  --color-bg-muted: #f0e7df;
-  --color-bg-accent: #e8dacd;
-  --color-surface: #fdfaf6;
-  --color-surface-strong: #ffffff;
+  --gradient-hero: radial-gradient(
+    circle at top,
+    var(--color-bg) 0%,
+    var(--color-bg-muted) 45%,
+    var(--color-bg-accent) 100%
+  );
+  --gradient-brand: linear-gradient(135deg, var(--color-ink), var(--color-brand));
+  --gradient-brand-deep: linear-gradient(135deg, var(--color-ink), var(--color-brand-deep));
+  --gradient-brand-line: linear-gradient(90deg, var(--color-ink), var(--color-brand));
 
-  --color-ink: #1b1b1f;
-  --color-ink-contrast: #f7f3ef;
-  --color-brand: #c2965c;
-  --color-brand-deep: #513927;
-  --color-footer: #141414;
-
-  --color-border: rgba(60, 48, 38, 0.1);
-  --color-border-soft: rgba(60, 48, 38, 0.08);
-  --color-ink-muted: rgba(247, 243, 239, 0.7);
-  --color-ink-soft: rgba(247, 243, 239, 0.6);
-  --color-ink-faint: rgba(247, 243, 239, 0.5);
-  --color-overlay: rgba(247, 243, 239, 0.92);
-
-  --shadow-rgb: 41, 33, 22;
-  --ink-rgb: 27, 27, 31;
+  --ui-page-bg: var(--color-bg);
+  --ui-section-bg: var(--color-bg-soft);
+  --ui-section-muted: var(--color-bg-muted);
+  --ui-surface: var(--color-surface);
+  --ui-surface-strong: var(--color-surface-strong);
+  --ui-card-border: var(--color-border);
+  --ui-card-border-soft: var(--color-border-soft);
+  --ui-text: var(--color-text);
+  --ui-text-muted: var(--color-text-muted);
+  --ui-text-soft: var(--color-text-soft);
+  --ui-accent: var(--color-accent);
+  --ui-ink: var(--color-ink);
+  --ui-ink-contrast: var(--color-ink-contrast);
+  --ui-ink-muted: var(--color-ink-muted);
+  --ui-ink-soft: var(--color-ink-soft);
+  --ui-ink-faint: var(--color-ink-faint);
+  --ui-nav-bg: var(--color-overlay);
+  --ui-footer-bg: var(--color-footer);
+  --ui-button-primary-bg: var(--color-ink);
+  --ui-button-primary-text: var(--color-ink-contrast);
+  --ui-button-secondary-bg: transparent;
+  --ui-button-secondary-border: var(--color-ink);
+  --ui-button-secondary-text: var(--color-ink);
+  --ui-shadow-strong: rgba(var(--shadow-rgb), 0.15);
+  --ui-shadow-soft: rgba(var(--ink-rgb), 0.15);
 }

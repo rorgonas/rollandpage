@@ -7,9 +7,9 @@
       </div>
       <div class="app-footer__links">
         <h4>Product</h4>
-        <a href="#">Templates</a>
-        <a href="#">Archive</a>
-        <a href="#">Pricing</a>
+        <router-link to="/templates">Templates</router-link>
+        <router-link to="/archive">Archive</router-link>
+        <a href="/#cta">Pricing</a>
       </div>
       <div class="app-footer__links">
         <h4>Company</h4>

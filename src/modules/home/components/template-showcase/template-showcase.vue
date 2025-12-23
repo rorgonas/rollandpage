@@ -3,23 +3,36 @@
     <div class="templates-header">
       <div>
         <h2>This week's drops</h2>
-        <p>Free weekly picks now, with premium archive access for subscribers.</p>
+        <p>One featured template each week, plus premium access to the growing archive.</p>
       </div>
-      <a class="templates-link" href="#cta">Unlock the archive</a>
+      <a class="templates-link" href="/archive">Browse archive (Pro)</a>
     </div>
-    <div class="templates-grid">
-      <article v-for="template in templates" :key="template.title" class="template-card">
-        <div class="template-visual">
-          <span>{{ template.category }}</span>
+    <div v-if="featuredTemplate" class="templates-featured">
+      <div class="templates-featured__preview">
+        <iframe
+          class="templates-featured__frame"
+          title="Template preview"
+          :srcdoc="previewDoc"
+          sandbox="allow-scripts"
+        ></iframe>
+      </div>
+      <div class="templates-featured__footer">
+        <div>
+          <p class="templates-featured__date">
+            {{ new Date(featuredTemplate.createdAt).toLocaleDateString() }}
+          </p>
+          <p class="templates-featured__summary">
+            {{ featuredTemplate.description }}
+          </p>
         </div>
-        <div class="template-body">
-          <h3>{{ template.title }}</h3>
-          <p>{{ template.description }}</p>
-          <div class="template-tags">
-            <span v-for="tag in template.tags" :key="tag">{{ tag }}</span>
-          </div>
-        </div>
-      </article>
+        <a class="templates-featured__cta" :href="`/templates/${featuredTemplate.id}`">
+          Preview template
+        </a>
+      </div>
+    </div>
+    <div v-else class="templates-empty">
+      <p>No active template yet. Add one from the admin page.</p>
+      <a class="templates-featured__cta" href="/admin/templates">Add template</a>
     </div>
   </section>
 </template>

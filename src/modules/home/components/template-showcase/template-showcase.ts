@@ -1,47 +1,22 @@
-import { defineComponent } from 'vue';
-
-const templates = [
-  {
-    title: 'Signal SaaS',
-    description: 'Conversion-focused hero, social proof, and clean pricing blocks.',
-    tags: ['SaaS', 'Pricing', 'B2B'],
-    category: 'SaaS',
-  },
-  {
-    title: 'Citrine Studio',
-    description: 'Editorial layout with portfolio grid and narrative storytelling.',
-    tags: ['Agency', 'Portfolio'],
-    category: 'Agency',
-  },
-  {
-    title: 'Northwind Launch',
-    description: 'Bold product launch page with email capture and timelines.',
-    tags: ['Startup', 'Launch'],
-    category: 'Startup',
-  },
-  {
-    title: 'Cacao Commerce',
-    description: 'Warm e-commerce landing with collections and testimonials.',
-    tags: ['Commerce', 'Lifestyle'],
-    category: 'Shop',
-  },
-  {
-    title: 'Pulse Mobile',
-    description: 'App landing experience with feature highlights and download prompts.',
-    tags: ['Mobile', 'App'],
-    category: 'App',
-  },
-  {
-    title: 'Altitude Advisory',
-    description: 'Consulting template with trust builders and case studies.',
-    tags: ['Consulting', 'Services'],
-    category: 'Consulting',
-  },
-];
+import { computed, defineComponent } from 'vue';
+import { useTemplates } from '@/modules/templates/use-templates';
 
 export default defineComponent({
   name: 'TemplateShowcase',
   setup() {
-    return { templates };
+    const { activeTemplates } = useTemplates();
+    const featuredTemplate = computed(() => activeTemplates.value[0]);
+    const previewDoc = computed(() => {
+      if (!featuredTemplate.value) {
+        return '';
+      }
+      const styles = `<style>${featuredTemplate.value.css}</style>`;
+      const scripts = featuredTemplate.value.js
+        ? `<script>${featuredTemplate.value.js}<\\/script>`
+        : '';
+      return `<!doctype html><html><head>${styles}</head><body>${featuredTemplate.value.html}${scripts}</body></html>`;
+    });
+
+    return { featuredTemplate, previewDoc };
   },
 });
