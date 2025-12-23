@@ -24,7 +24,7 @@
 
 .cta-card p {
   margin: 0;
-  color: var(--ui-color-accent);
+  color: var(--ui-ink-contrast);
 }
 
 .cta-actions {

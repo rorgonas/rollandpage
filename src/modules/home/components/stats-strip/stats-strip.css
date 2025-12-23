@@ -19,5 +19,5 @@
 
 .stat-card p {
   margin: 0;
-  color: var(--ui-ink-muted);
+  color: var(--ui-ink-contrast);
 }

@@ -19,7 +19,11 @@
           </div>
           <span class="template-detail__status">{{ template.status }}</span>
         </div>
+        <div class="template-detail__actions">
+          <button type="button" @click="enterFullscreen">Full screen</button>
+        </div>
         <iframe
+          ref="previewFrame"
           class="template-detail__preview"
           title="Template preview"
           :srcdoc="previewDoc"

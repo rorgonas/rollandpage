@@ -1,4 +1,4 @@
-import { computed, defineComponent } from 'vue';
+import { computed, defineComponent, ref } from 'vue';
 import { useRoute } from 'vue-router';
 import AppNavbar from '@/components/layout/app-navbar/app-navbar.vue';
 import AppFooter from '@/components/layout/app-footer/app-footer.vue';
@@ -16,6 +16,7 @@ export default defineComponent({
     const template = computed(() =>
       templates.value.find((item) => item.id === String(route.params.id))
     );
+    const previewFrame = ref<HTMLIFrameElement | null>(null);
 
     const previewDoc = computed(() => {
       if (!template.value) {
@@ -26,6 +27,16 @@ export default defineComponent({
       return `<!doctype html><html><head>${styles}</head><body>${template.value.html}${scripts}</body></html>`;
     });
 
-    return { template, previewDoc };
+    const enterFullscreen = async () => {
+      const target = previewFrame.value;
+      if (!target) {
+        return;
+      }
+      if (target.requestFullscreen) {
+        await target.requestFullscreen();
+      }
+    };
+
+    return { template, previewDoc, previewFrame, enterFullscreen };
   },
 });

@@ -16,6 +16,25 @@
   align-items: center;
 }
 
+.template-detail__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.template-detail__actions button {
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--ui-button-secondary-border);
+  background: var(--ui-button-secondary-bg);
+  color: var(--ui-button-secondary-text);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.template-detail__actions button:hover {
+  box-shadow: 0 10px 22px rgba(var(--ink-rgb), 0.12);
+}
+
 .template-detail__tags {
   display: flex;
   flex-wrap: wrap;
