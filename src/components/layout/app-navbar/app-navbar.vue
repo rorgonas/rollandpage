@@ -11,7 +11,7 @@
       </nav>
 
       <div class="app-navbar__actions">
-        <a class="app-navbar__cta" href="/#templates">Browse This Week</a>
+        <a class="app-navbar__cta" href="#templates">Browse This Week</a>
         <ThemeToggle size="sm" />
       </div>
     </div>
