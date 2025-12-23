@@ -1,10 +1,10 @@
 <template>
   <div class="templates-page">
     <AppNavbar>
-      <a href="/">Home</a>
-      <a href="/templates">Templates</a>
-      <a href="/archive">Archive</a>
-      <a href="/about">About</a>
+     <router-link to="/">Home</router-link>
+      <router-link to="/templates">Templates</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/pricing">Pricing</router-link>
     </AppNavbar>
     <main>
       <header class="templates-page__header" v-if="template">
@@ -17,10 +17,9 @@
           <div class="template-detail__tags">
             <span v-for="tag in template.tags" :key="tag">{{ tag }}</span>
           </div>
-          <span class="template-detail__status">{{ template.status }}</span>
-        </div>
-        <div class="template-detail__actions">
+            <div class="template-detail__actions">
           <button type="button" @click="enterFullscreen">Full screen</button>
+        </div>
         </div>
         <iframe
           ref="previewFrame"

@@ -9,19 +9,19 @@
         <h4>Product</h4>
         <router-link to="/templates">Templates</router-link>
         <router-link to="/archive">Archive</router-link>
-        <a href="/#cta">Pricing</a>
+        <router-link to="/pricing">Pricing</router-link>
       </div>
       <div class="app-footer__links">
         <h4>Company</h4>
         <router-link to="/about">About</router-link>
-        <a href="#">Careers</a>
-        <a href="#">Contact</a>
+        <router-link to="/careers">Careers</router-link>
+        <router-link to="/contact">Contact</router-link>
       </div>
       <div class="app-footer__links">
         <h4>Community</h4>
-        <a href="#">Blog</a>
-        <a href="#">Guides</a>
-        <a href="#">Support</a>
+        <router-link to="/blog">Blog</router-link>
+        <router-link to="/guides">Guides</router-link>
+        <router-link to="/support">Support</router-link>
       </div>
     </div>
     <div class="app-footer__base">
