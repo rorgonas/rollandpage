@@ -8,8 +8,8 @@
         templates.
       </p>
       <div class="error-actions">
-        <a class="error-primary" href="/">Back to home</a>
-        <a class="error-secondary" href="/#templates">Browse templates</a>
+        <router-link class="error-primary" to="/">Back to home</router-link>
+        <router-link class="error-secondary" to="/templates">Browse templates</router-link>
       </div>
     </div>
   </div>

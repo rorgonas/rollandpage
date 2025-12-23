@@ -5,7 +5,7 @@
         <h2>This week's drops</h2>
         <p>One featured template each week, plus premium access to the growing archive.</p>
       </div>
-      <a class="templates-link" href="/archive">Browse archive (Pro)</a>
+      <router-link class="templates-link" to="/archive">Browse archive (Pro)</router-link>
     </div>
     <div v-if="featuredTemplate" class="templates-featured">
       <div class="templates-featured__preview">
@@ -25,9 +25,9 @@
             {{ featuredTemplate.description }}
           </p>
         </div>
-        <a class="templates-featured__cta" :href="`/templates/${featuredTemplate.id}`">
+        <router-link class="templates-featured__cta" :to="`/templates/${featuredTemplate.id}`">
           Preview template
-        </a>
+        </router-link>
       </div>
     </div>
     <div v-else class="templates-empty">
