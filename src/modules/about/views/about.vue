@@ -1,10 +1,10 @@
 <template>
   <div class="about-page">
     <app-navbar>
-      <a href="/">Home</a>
-      <a href="/#templates">Templates</a>
-      <a href="/about">About</a>
-      <a href="/#cta">Pricing</a>
+      <router-link to="/">Home</router-link>
+      <router-link to="/templates">Templates</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/pricing">Pricing</router-link>
     </app-navbar>
     <main>
       <section class="about-hero">
